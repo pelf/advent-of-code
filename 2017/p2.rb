@@ -17,9 +17,33 @@ input = "3751  3769  2769  2039  2794  240 3579  1228  4291  220 324 3960  211 1
 
 rows = input.split("\n")
 
+# part 1
 checksum = rows.map do |row|
   sorted = row.split(" ").map(&:to_i).sort
   sorted.last - sorted.first
 end.reduce(:+)
 
 puts checksum
+
+# part 2
+# brute force and declarative :'(
+checksum = rows.map do |row|
+  sorted = row.split(" ").map(&:to_i).sort.reverse
+  done = false
+  res = nil
+  sorted.each_with_index do |n,i|
+    (sorted.size-1).downto(i+1) do |j|
+      d = sorted[j]
+      if n % d == 0
+        done = true
+        res = n / d
+        break
+      end
+    end
+    break if done
+  end
+  res
+end.reduce(:+)
+
+puts checksum
+

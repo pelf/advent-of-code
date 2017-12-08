@@ -1,4 +1,4 @@
-input = File.read('./inputs/4.txt')
+input = File.read('input.txt')
 passphrases = input.split("\n")
 
 # part 1

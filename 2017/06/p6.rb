@@ -1,4 +1,4 @@
-input = File.read('./inputs/6.txt')
+input = File.read('input.txt')
 @banks = input.split.map { |b| b.to_i }
 
 def highest_index

@@ -1,6 +1,6 @@
 require 'set'
 
-input = File.read('./inputs/7.txt')
+input = File.read('input.txt')
 @links = input.split("\n")
 
 class Disk

@@ -1,4 +1,4 @@
-ops = File.readlines('./inputs/8.txt')
+ops = File.readlines('input.txt')
 
 regs = Hash.new(0)
 max = 0

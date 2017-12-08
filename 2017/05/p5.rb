@@ -1,4 +1,4 @@
-input = File.read('./inputs/5.txt')
+input = File.read('input.txt')
 jumps = input.split("\n").map { |j| j.strip.to_i }
 
 # part 1

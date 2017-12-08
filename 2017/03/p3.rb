@@ -22,9 +22,12 @@ loop do
   break if l >= 277678
 end
 
-# get the final result with a back the envelope calculation:
+# got the final result with a back the envelope calculation:
 # knowing the ring height and the last number, we can calculate
 # that 277678 is 50 steps from the bottom right corner, and thus
 # 212 steps from the vertical centre. add half the height to go
-# up to square 1 and you get = 475
+# up to square 1 and you get 475
 
+# part 2
+
+??
